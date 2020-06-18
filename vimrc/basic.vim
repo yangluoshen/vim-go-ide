@@ -35,7 +35,7 @@ nnoremap JJJJ <nop>
 "------------------------------------------------------------------------------
 
 " Make sure that coursor is always vertically centered on j/k moves
-set so=999
+"set so=999
 
 " add vertical lines on columns
 set colorcolumn=80,120
@@ -83,9 +83,9 @@ set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
 " In many terminal emulators the mouse works just fine, thus enable it.
-if has('mouse')
-  set mouse=a
-endif
+"if has('mouse')
+"  set mouse=a
+"endif
 
 " Allow smarter completion by infering the case
 set infercase
