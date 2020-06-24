@@ -20,6 +20,11 @@ IMPROVEMENTS:
   [[GH-2917]](https://github.com/fatih/vim-go/pull/2917)
 * Change `g:go_rename_command`'s default to `gopls`.
   [[GH-2922]](https://github.com/fatih/vim-go/pull/2922)
+* Do not send unnecessary textDocument/didChange notifications to `gopls`.
+  [[GH-2902]](https://github.com/fatih/vim-go/pull/2902)
+  [[GH-2930]](https://github.com/fatih/vim-go/pull/2930)
+* Stop the debugger when the process being debugged exits.
+  [[GH-2921]](https://github.com/fatih/vim-go/pull/2921)
 
 BUG FIXES:
 * Fix call to non-existent function in terminal mode edge case.
@@ -36,7 +41,11 @@ BUG FIXES:
 * Use the resolved directory name for `gopls`' working directory when `go.mod`
   is in a symlinked path.
   [[GH-2913]](https://github.com/fatih/vim-go/pull/2913)
-
+* Fix buffer reuse with `:GoDef`.
+  [[GH-2928]](https://github.com/fatih/vim-go/pull/2928)
+* Handle breakpoints that are already set before calling `:GoDebugStart` or
+  `:GoDebugTest` in some locales that cause the `sign place` output to vary.
+  [[GH-2921]](https://github.com/fatih/vim-go/pull/2921)
 
 ## v1.23 - (May 16, 2020)
 

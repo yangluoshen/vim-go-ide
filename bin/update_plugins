@@ -10,6 +10,7 @@ from os import path
 
 #--- Globals ----------------------------------------------
 PLUGINS = """
+ctrlp.vim https://github.com/kien/ctrlp.vim
 bclose.vim https://github.com/rbgrouleff/bclose.vim
 ack.vim https://github.com/mileszs/ack.vim
 bufexplorer https://github.com/corntrace/bufexplorer
